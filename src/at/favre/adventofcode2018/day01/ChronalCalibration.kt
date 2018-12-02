@@ -60,10 +60,10 @@ class FrequencyParser(private val fileName: String) {
         }
 
         val number = copy.substring(1).toLong()
-        return LineResult(isMinus, number);
+        return LineResult(isMinus, number)
     }
 
-    private data class LineResult(val isMinus: Boolean, val value: Long);
+    private data class LineResult(val isMinus: Boolean, val value: Long)
 }
 
 fun main(args: Array<String>) {
